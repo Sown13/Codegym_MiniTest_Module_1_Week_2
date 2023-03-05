@@ -9,7 +9,7 @@
             background-size: 60%;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-position: right
+            background-position: right;
         }
 
         input {
@@ -24,13 +24,45 @@
         input:hover {
             transform: scale(1.2);
         }
+        .alhaitham {
+            max-width: 30%;
+        }
+        .layla {
+            max-width: 20%;
+        }
+        .nilou {
+            max-width: 40%;
+        }
+        .nahida {
+            max-width: 20%;
+            position: relative;
+            animation: nahida 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes nahida {
+            from {left:100px;
+        }
+            to {right:100px;
+            }
+        }
+        img:hover {
+            transform: scaleX(-1);
+        }
     </style>
 </head>
 <body>
-
+<table>
+    <tr>
+        <td>
 <h1> Bài 1 - Tính giai thừa của 1 số bất kỳ</h1>
 
 <input type="button" value="Try" id="btnFactorial">
+        </td>
+        <td>
+            <img src="layla.png" alt="nothing" class="layla" onclick="dontTouch()">
+        </td>
+    </tr>
+</table>
 <br>
 <hr>
 <br>
@@ -41,21 +73,32 @@
             <input type="button" value="Try" id="btnDivisible">
         </td>
         <td>
-            <p style="text-align: right;font-size:20px"> Dont care this img <br> Just add it for fun
+            <img src="nilou.png" alt="nothing" class="nilou" onclick="thankYou()">
+        </td>
+        <td>
+            <p style="text-align: right;font-size:20px"> Dont care those img <br> Just add it for fun
             </p>
         </td>
     </tr>
 </table>
 <br>
 <hr>
-<h1> Bài 3 - Tính tổng các số chia hết cho 5 trong mảng</h1>
-<p> Cho mảng sau:
-    <br>
-    exampleArr = [0,5,6,8,12,15,24,30,99,100]
-</p>
-<input type="button" value="Try" id="btnTotalDiv5">
-<p id="displayTotal"></p>
-<br>
+<table>
+    <tr>
+        <td>
+            <h1> Bài 3 - Tính tổng các số chia hết cho 5 trong mảng</h1>
+            <p> Cho mảng sau:
+                <br>
+                exampleArr = [0,5,6,8,12,15,24,30,99,100]
+            </p>
+            <input type="button" value="Try" id="btnTotalDiv5">
+            <p id="displayTotal"></p>
+        </td>
+        <td>
+            <img src="alhaitham_reversed.png" alt="nothing" class="alhaitham" onclick="getOut()">
+        </td>
+    </tr>
+</table>
 <hr>
 <h1> Bài 4 </h1>
 <input type="button" id="btnInit" value="Initialize your array">
@@ -69,6 +112,7 @@
 <br>
 <input type="button" id="btnPrimeTotal" value="Tổng các số nguyên tố trong mảng là">
 <p id="displayPrimeTotal"></p>
+<img src="nahida.png" alt="nothing" class="nahida" onclick="boring()">
 </body>
 <script src="mini_test_week_2_core_function.js">
 </script>

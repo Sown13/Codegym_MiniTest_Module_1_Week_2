@@ -107,3 +107,18 @@ document.getElementById("btnInit").addEventListener("click", initializeArr);
 document.getElementById("btnEven").addEventListener("click", countEven);
 document.getElementById("btnEvenTotal").addEventListener("click", totalEven);
 document.getElementById("btnPrimeTotal").addEventListener("click", totalPrime);
+
+
+// Boring
+function dontTouch(){
+    alert("Don't touch me,plz")
+}
+function thankYou(){
+    alert("Thank you for touching <3!")
+}
+function getOut(){
+    alert("Leave me alone!")
+}
+function boring(){
+    alert("Focus on your work, please!!!")
+}
