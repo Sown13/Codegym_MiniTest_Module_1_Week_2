@@ -33,7 +33,7 @@ function totalDiv5() {
     let i, total;
     total = 0;
     for (i = 0; i < expArr.length; i++) {
-        if (expArr[i] %5=== 0) {
+        if (expArr[i] % 5 === 0) {
             total += expArr[i];
             console.log(total);
         }
@@ -44,8 +44,10 @@ function totalDiv5() {
 document.getElementById("btnTotalDiv5").addEventListener("click", totalDiv5);
 
 // Bài 4 ---------------------------------------------------------
+let arr = [];
+
 function initializeArr() {
-    let arr = [];
+    let i;
     arr.length = parseInt(prompt("Nhập độ dài của mảng (xin đừng nhập mảng quá lớn)"));
     for (i = 0; i < arr.length; i++) {
         arr[i] = prompt("Nhập phần tử có 'index = " + i + "' vào");
@@ -53,18 +55,55 @@ function initializeArr() {
     document.getElementById("displayArr").innerHTML = "arr = [" + arr + " ]";
 }
 
-function countEven(){
-
+function countEven() {
+    console.log(arr);
+    let i, count;
+    count = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            count++;
+        }
+    }
+    document.getElementById('displayEven').innerHTML = "số lượng số chẵn trong mảng của bạn là " + count;
 }
 
-function totalEven(){
-
+function totalEven() {
+    let i, total;
+    total = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            total += parseInt(arr[i]);
+        }
+    }
+    document.getElementById('displayEvenTotal').innerHTML = "Tổng các số chẵn trong mảng của bạn là " + total;
 }
 
-function totalInt(){
-
+function checkPrime(isPrime) {
+    if (isPrime <= 1) {
+        return false
+    }
+    let i;
+    for (i = 2; i <= Math.sqrt(isPrime); i++) {
+        if (isPrime % i === 0) {
+            return false
+        }
+    }
+    return true
 }
-document.getElementById("btnInit").addEventListener("click",initializeArr);
-document.getElementById("btnEven").addEventListener("click",countEven);
-document.getElementById("btnEvenTotal").addEventListener("click",totalEven);
-document.getElementById("btnIntTotal").addEventListener("click",totalInt);
+
+function totalPrime() {
+    console.log(arr)
+    let i, total;
+    total = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (checkPrime(arr[i])) {
+            total += parseInt(arr[i]);
+        }
+    }
+   return document.getElementById("displayPrimeTotal").innerHTML = total;
+}
+
+document.getElementById("btnInit").addEventListener("click", initializeArr);
+document.getElementById("btnEven").addEventListener("click", countEven);
+document.getElementById("btnEvenTotal").addEventListener("click", totalEven);
+document.getElementById("btnPrimeTotal").addEventListener("click", totalPrime);
