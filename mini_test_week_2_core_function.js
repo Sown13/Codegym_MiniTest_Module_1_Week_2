@@ -42,3 +42,29 @@ function totalDiv5() {
 }
 
 document.getElementById("btnTotalDiv5").addEventListener("click", totalDiv5);
+
+// Bài 4 ---------------------------------------------------------
+function initializeArr() {
+    let arr = [];
+    arr.length = parseInt(prompt("Nhập độ dài của mảng (xin đừng nhập mảng quá lớn)"));
+    for (i = 0; i < arr.length; i++) {
+        arr[i] = prompt("Nhập phần tử có 'index = " + i + "' vào");
+    }
+    document.getElementById("displayArr").innerHTML = "arr = [" + arr + " ]";
+}
+
+function countEven(){
+
+}
+
+function totalEven(){
+
+}
+
+function totalInt(){
+
+}
+document.getElementById("btnInit").addEventListener("click",initializeArr);
+document.getElementById("btnEven").addEventListener("click",countEven);
+document.getElementById("btnEvenTotal").addEventListener("click",totalEven);
+document.getElementById("btnIntTotal").addEventListener("click",totalInt);
