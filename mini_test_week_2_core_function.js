@@ -38,8 +38,7 @@ function totalDiv5() {
             console.log(total);
         }
     }
-    document.getElementById("displayTotal").innerHTML = total
+    document.getElementById("displayTotal").innerHTML = total;
 }
 
 document.getElementById("btnTotalDiv5").addEventListener("click", totalDiv5);
-
