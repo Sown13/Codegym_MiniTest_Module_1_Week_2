@@ -1,4 +1,5 @@
 // Bài 1-------------------------------------------------
+// Bài 1-------------------------------------------------
 function factorCal() {
     let x, i, factorial;
     factorial = 1
@@ -12,6 +13,7 @@ function factorCal() {
 document.getElementById("btnFactorial").addEventListener("click", factorCal);
 
 
+// Bài 2------------------------------------------------------
 // Bài 2------------------------------------------------------
 function divFindFirst() {
     let dividend, quantity, c, i;
@@ -28,6 +30,7 @@ document.getElementById("btnDivisible").addEventListener("click", divFindFirst);
 
 
 // Bài 3---------------------------------------------------------
+// Bài 3---------------------------------------------------------
 function totalDiv5() {
     let expArr = [0, 5, 6, 8, 12, 15, 24, 30, 99, 100];
     let i, total;
@@ -43,6 +46,7 @@ function totalDiv5() {
 
 document.getElementById("btnTotalDiv5").addEventListener("click", totalDiv5);
 
+// Bài 4 ---------------------------------------------------------
 // Bài 4 ---------------------------------------------------------
 let arr = [];
 
@@ -109,7 +113,8 @@ document.getElementById("btnEvenTotal").addEventListener("click", totalEven);
 document.getElementById("btnPrimeTotal").addEventListener("click", totalPrime);
 
 
-// Boring
+// Nothing important------------------------------------
+// Nothing important------------------------------------
 function dontTouch(){
     alert("Don't touch me,plz")
 }
