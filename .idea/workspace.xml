@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05bd6266-b530-48da-bb5d-4e09e606afb6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exercise_1_Factorial_Calculate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mini_test_week_2_core_function.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exercise_1_Factorial_Calculate.html" beforeDir="false" afterPath="$PROJECT_DIR$/Mini_Test_Week_2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677995982855</updated>
-      <workItem from="1677995983941" duration="2239000" />
+      <workItem from="1677995983941" duration="6490000" />
     </task>
     <servers />
   </component>
