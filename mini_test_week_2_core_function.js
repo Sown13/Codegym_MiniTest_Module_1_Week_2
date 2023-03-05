@@ -48,7 +48,7 @@ let arr = [];
 
 function initializeArr() {
     let i;
-    arr.length = parseInt(prompt("Nhập độ dài của mảng (xin đừng nhập mảng quá lớn)"));
+    arr.length = parseInt(prompt("Nhập độ dài của mảng (Không nên nhập mảng quá lớn, sẽ rất mệt!!!)"));
     for (i = 0; i < arr.length; i++) {
         arr[i] = prompt("Nhập phần tử có 'index = " + i + "' vào");
     }
