@@ -120,5 +120,5 @@ function getOut(){
     alert("Leave me alone!")
 }
 function boring(){
-    alert("Focus on your work, please!!!")
+    alert("Focus on your work, please ^_^")
 }
